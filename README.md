@@ -128,4 +128,7 @@ int main(void)
     return 0;
 }
 ```
+# 在支持 VT100 颜色码的终端的串口打印效果
+使用 MobaXterm 的彩色打印效果
+![image](https://github.com/SouthernSandbox/hexview/assets/75567944/6ac7c453-b3d0-4230-882e-a86e3bd478b1)
 
