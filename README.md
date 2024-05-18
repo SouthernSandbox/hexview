@@ -64,7 +64,7 @@ static hv_color_t _hv_mark(uint8_t ch)
 ```
 
 ## 2.4 API 接口函数
-Hexview 提供 hv_init() 和 hv_print_chart()，分别用于初始化和视图打印。
+Hexview 提供 hv_init() 和 hv_print_chart()，分别用于初始化和视图打印。其中，hv_print_chart() 支持打印多种信息，例如目标名称，被调用时所在文件、函数的名称和行数，起始地址和打印长度，以及备注信息。
 ```c
 int hv_init(hexview_t hv, const char* name, print_fn_t print, mark_fn_t mark);
 int hv_print_chart( hexview_t hv, 
@@ -128,7 +128,8 @@ int main(void)
     return 0;
 }
 ```
-# 在支持 VT100 颜色码的终端的串口打印效果
-使用 MobaXterm 的彩色打印效果
+
+# 三、在支持 VT100 颜色码的终端的串口打印效果
+使用 MobaXterm 的彩色打印效果，颜色标记函数参考 2.3 中的配置。
 ![image](https://github.com/SouthernSandbox/hexview/assets/75567944/6ac7c453-b3d0-4230-882e-a86e3bd478b1)
 
